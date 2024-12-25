@@ -1,0 +1,491 @@
+
+html,body{
+    font-size:16px;
+} 
+@font-face {
+    font-family: ShortBaby;
+    src: url(ShortBaby-Mg2w.ttf);
+  }
+  body {
+    font-family: "Sedan SC", serif;
+    background-color: #f5f5f5;
+  }
+
+  /* The main section */
+  main {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 1.25rem;
+    padding: 1.25rem;
+  }
+  /* The left section */
+  .left {
+    background-color: black;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    position: sticky;
+    top: 1.25rem;
+    border-radius: 2rem;
+    /* align-items: center; */
+  }
+  
+  .profile {
+    display: flex;
+    flex-direction: column;
+    margin: 1.25rem;
+    align-items: center;
+  }
+  .profile-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .profile p {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 200;
+  }
+  
+  .nav {
+    color: white;
+    display: flex;
+    margin-left: 2.5rem;
+    padding-right: 1.25rem;
+  }
+  .nav :hover {
+    color: gold;
+  }
+  
+  .nav > a {
+    padding-left: 0.7rem;
+    font-weight: 400;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-bottom: 1.25rem;
+    color: white;
+  }
+  .nav > a:hover {
+    color: lightgrey;
+  }
+  
+  /* The right section */
+   .right {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  /* The header section */
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  header > h1 {
+    margin-left: 3rem;
+    margin-top: 0.7rem;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  header > input {
+    margin-right: 5%;
+    width: 12.5rem;
+    height: 1.5rem;
+    border-radius: 0.7rem;
+    border: 0px solid white;
+    margin-top: 1.25rem;
+  }
+  header > input:focus {
+    border: 2px solid lightgreen;
+    outline: none;
+  }
+  header > input::placeholder {
+    color: grey;
+    font-size: 0.75rem;
+    text-transform: lowercase;
+  }
+  
+  /* The dashboard section */
+  #board {
+    background-color: white;
+    border-radius: 1.5rem;
+    width: 80%;
+    margin-left: 3rem;
+    padding: 0.7rem;
+  }
+  /* The dashboard bar graph image */
+  #board img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  article h2 {
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  /* The dashboard data section */
+  .card-con {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: ShortBaby;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+    margin-left: 3rem;
+    margin-right:2rem;
+  }
+  .card {
+    height: 6.25rem;
+    width: 11.25rem;
+    border-radius: 1.25rem;
+  }
+  .card1 {
+    background-color: rgb(183, 242, 183);
+  }
+  .card2 {
+    background-color: rgb(249, 249, 202);
+  }
+  .card3 {
+    background-color: rgb(239, 190, 198);
+  }
+  .card4 {
+    background-color: rgb(188, 220, 239);
+  }
+  .card > span {
+    margin-left: 9.5rem;
+    margin-top: 1.25rem;
+  }
+  .cardHead {
+    margin: 0;
+    margin-left: 0.7rem;
+    font-size: 1.2rem;
+  }
+  .cardData {
+    margin-top: 0.25rem;
+    font-size: 1rem;
+    margin-left: 0.7rem;
+  }
+  .card:hover {
+    background: radial-gradient(circle, pink, skyblue);
+  }
+  /* The user interaction section */
+  #users {
+    margin-top: 3rem;
+    margin-left: 4.5rem;
+  }
+  table {
+     width:95%; 
+    border-collapse: collapse;
+    border-radius: 1.25rem;
+    background-color: white;
+  }
+  table th,
+  table td {
+    padding: 1rem 6.25rem;
+    text-align: left;
+  }
+  table th {
+    background-color: rgb(113, 93, 93);
+    font-weight: 600;
+  }
+  table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  table tbody tr:hover {
+    background-color: #aeaeae;
+  }
+  /* The schedule section */
+  #schedule {
+    background-color: white;
+    border-radius: 2rem;
+    height: 28.25rem;
+    
+    margin-top: 5rem;
+    overflow-y: scroll;
+    max-height: 25rem;
+    margin-left: 4.5rem;
+  }
+  
+  .schedule-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+  }
+  .schedule-head > h3 {
+    margin-left: 1.25rem;
+    font-weight:600;
+    font-size: 1.5rem;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .schedule-head p {
+    margin-right: 1.25rem;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 0px;
+  }
+  
+  .meet {
+    margin-top: 0;
+    margin-bottom: 1px;
+    margin-left: 0.7rem;
+  }
+  .head {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  .detail {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #999999;
+  }
+  .schedule-details div:nth-child(odd) {
+    margin-left: 1.25rem;
+    margin-bottom: 0.7rem;
+    border-left: 3px solid green;
+  }
+  .schedule-details div:nth-child(even) {
+    margin-left: 1.25rem;
+    margin-bottom: 0.7rem;
+    border-left: 3px solid blue;
+  }
+  
+  
+    /* The contact section */ 
+  /* .contact_inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+    margin-left: 1.25rem;
+    margin-bottom: 1.25rem;
+  }   */
+     /* .contact{
+      display:flex;
+     } */
+     .contact_inner {
+      display: flex;
+      /* flex-wrap: wrap;  */
+      gap: 1rem;
+      margin-top: 1rem;
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+    }
+    .location {
+      flex: 1;
+    }
+    iframe {
+      border-radius: 2rem;
+    }
+    .feedback-form {
+      background-color: white;
+      border-radius: 2rem;
+      padding: 1rem;
+       flex: 1; 
+       
+    }
+    
+    .feedback-form h2 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    .feedback-form input[type="text"],
+    .feedback-form input[type="email"],
+    .feedback-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    .feedback-form textarea {
+      resize: vertical;
+      height: 150px; /* Adjust height as needed */
+    }
+    .feedback-form input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #9bdd7c;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+  
+  
+  /* The footer section */
+  footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 1.25rem 0;
+    text-align: center;
+  }
+  footer div {
+    margin-bottom: 0.7rem;
+  }
+  footer a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 0.7rem;
+  }
+  footer a:hover {
+    color: lightgray;
+  }
+  footer a:firstchild {
+    margin-left: 0;
+  }
+  footer a:lastchild {
+    margin-right: 0;
+  }
+  /* The added transition*/
+  article h2:hover{
+  text-decoration-color:gold;
+  font-size:2rem;
+  transition: 1s;
+  } 
+  /* The hamburger icon */
+  .hamburger {
+    display:none;
+  }
+  /* Media quaries for width 780px or less */
+   @media screen and (max-width: 780px) {
+    main {
+      display: block;
+    }
+  
+    .left {
+      position: static;
+      height: auto;
+    }
+  
+    .profile-img {
+      width: 15%;
+      position: absolute;
+      top: 0.1rem;
+    }
+  
+    .profile p {
+      margin-top: 5rem;
+    }
+  
+    .navbar {
+      display: flex;
+      margin: 0%;
+      justify-content: space-around;
+    }
+  
+    .nav {
+      margin: 0%;
+      padding: 0%;
+    }
+  
+    .navbar span {
+      display: none;
+    }
+  } 
+  @media screen and (max-width:630px) {
+    .navbar{
+      display:none;
+    }
+    .profile p {
+      margin-top: 3.5rem;
+    }
+    #users {
+      
+      margin-left: 2rem;
+    }
+    #schedule{
+      margin-left: 1rem;
+    }
+  
+    #board{
+      width:90%;
+      margin-left:1rem;
+    }
+    iframe{
+      width:100%;
+    }
+    .left{
+      flex-direction:row;
+      justify-content: space-around;
+     }
+  
+  
+  
+  /* The hamburger icon */
+  
+  
+     .hamburger{
+      display:inline-block;
+      color:white;
+      margin-left: 8rem;
+      margin-top:1.5rem;
+     position:relative; 
+     }
+     
+     
+  
+     .dropdown-icon {
+      font-size: 20px;
+      cursor: pointer;
+      
+    }
+  
+    /* The select menu */
+    .dropdown-select {
+      display: none; /* Initially hidden */
+      position: absolute; 
+      /* top: 85px;  */
+      right:2px;
+      z-index: 1;
+      width: 100px;
+      padding: 5px;
+      font-size: 14px;
+      color:white;
+      background-color: black;
+      
+    }
+  
+    /* Show dropdown on hover */
+    .hamburger:hover .dropdown-select {
+      display: block;
+    }
+    .dropdown-select option {
+      background-color: black;
+      color: white;
+      border: none;
+    }
+    
+    .dropdown-select option:hover {
+      background-color: grey;
+    }
+     table{
+      max-width:100%;
+      box-sizing:border-box;
+      table-layout: auto; 
+    }
+    table th,table td{
+      max-width:100%;
+      box-sizing:border-box;
+      padding-left: 1rem;
+      
+    } 
+     table {
+      table-layout: fixed; 
+      width: 100%; 
+    } 
+    }
+    @media screen  and (max-width:440px) {
+      
+    }
+  
+    

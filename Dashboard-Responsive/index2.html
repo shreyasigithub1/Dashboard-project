@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard project-Responsive</title>
+    <link rel="stylesheet" href="style2.css" />
+    <!-- Embedded code for Sedan SC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Sedan+SC&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- google icon link -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <!-- Font awesome link -->
+    <script src="https://kit.fontawesome.com/470799a92f.js" crossorigin="anonymous"></script>
+    
+  </head>
+  <body>
+    <main>
+
+        <!-- The left section -->
+      <section class="left">
+        <div class="profile">
+            <div class="profile-img">
+          <img
+            src="https://e7.pngegg.com/pngimages/348/800/png-clipart-man-wearing-blue-shirt-illustration-computer-icons-avatar-user-login-avatar-blue-child-thumbnail.png"
+          />
+        </div>
+        <div>
+          <p>John Doe</p>
+        </div>
+        </div>
+        <div class="hamburger">
+          <!-- <i class="fa-solid fa-bars"></i> -->
+          <a class="dropdown-icon"> <i class="fa-solid fa-bars"></i></a>
+          <select class="dropdown-select" onchange="location = this.value;">
+            <option value="#board">Dashboard</option>
+            <option value="#data">Dashboard Data</option>
+            <option value="#users">Users</option>
+            <option value="#schedule">Schedule</option>
+            <option value="#contact">Contact</option>
+          </select>
+      </div>
+        <div class="navbar">
+        <div class="nav">
+          <span class="material-icons">format_list_bulleted</span>
+          
+          <a href="#board">Dashboard</a>
+        </div>
+        <div class="nav">
+          <span class="material-symbols-outlined"> monitoring </span>
+          <a href="#data">Data</a>
+        </div>
+        <div class="nav">
+          <span class="material-symbols-outlined"> person </span>
+          <a href="#users">Users</a>
+        </div>
+        <div class="nav">
+          <span class="material-symbols-outlined"> calendar_month </span>
+          <a href="#schedule">Schedule</a>
+        </div>
+        <div class="nav">
+          <span class="material-symbols-outlined">
+            connect_without_contact
+          </span>
+          <a href="#contact">Contact</a>
+        </div>
+    </div>
+      </section>
+      <!-- The right section -->
+      <section class="right">
+        <!-- The header section -->
+        <header>
+            <h1>DashBoard</h1>
+            <input type="text" placeholder="Search...">
+        </header>
+        <!-- Board section -->
+        <article id="board">
+            <div>
+            <h3>Activities</h3>
+            <p>May-June 2024</p>
+        </div>
+        <div>
+            <img src="BarGraph.png" alt="Bar Graph"/>
+        </div>
+        </article>
+        <!-- Data section -->
+        <article id="data">
+        
+            <h2>Dashboard Data</h2>
+        <div class="card-con">
+        <div class="card1 card">
+            <span class="material-symbols-outlined">
+                attach_money
+                </span>
+            <p class="cardHead">Total Revenue</p>
+            <p class="cardData">$456,553,564</p>
+        </div>
+        <div class="card2 card">
+            <span class="material-symbols-outlined">
+                sell
+                </span>
+            <p class="cardHead">Total Transaction</p>
+            <p class="cardData">1,450</p>
+        </div>
+        <div class="card3 card">
+            <span class="material-symbols-outlined">
+                thumb_up
+                </span>
+            <p class="cardHead" >Total likes</p>
+            <p class="cardData">1,234</p>
+        </div>
+        <div class="card4 card"> 
+            <span class="material-symbols-outlined">
+                person
+                </span>
+            <p class="cardHead">Total User</p>
+            <p class="cardData">856</p>
+        </div>
+    </div>
+        </article>
+        <!-- Users section -->
+        <article id="users">
+            <h2>User Interactions</h2>
+           
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Number of users</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>January</td>
+                        <td>1000</td>
+                    </tr>
+                    <tr >
+                        <td>February</td>
+                        <td>1200</td>
+                    </tr>
+                    <tr >
+                        <td>March</td>
+                        <td>1800</td>
+                    </tr>
+                    <tr >
+                        <td>April</td>
+                        <td>1700</td>
+                    </tr>
+                    <tr >
+                        <td>May</td>
+                        <td>1400</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+        </article>
+        <!-- Schedule section -->
+        <article id="schedule">
+                <div class="schedule-head">
+                <h3>TODAY'S SCHEDULE</h3>
+                <p>See all</p>
+            </div>
+            <div class="schedule-details">
+            <div>
+                <p class="meets head">MEETINGS FROM SUPPLIERS FROM KUTTA BALI</p>
+                <p class="meets detail">14.00-15.00 </p>
+                <p class="meets detail">AT SUNSET ROAD KUTTA BALI</p>
+            </div>
+            <div>
+                <p class="meets head">MEETINGS FROM SUPPLIERS FROM SURESH</p>
+                <p class="meets detail">15.00-16.00</p>
+                <p class="meets detail">AT SUNSET ROAD BALI</p>
+            </div>
+            <div>
+                <p class="meets head">MEETINGS FROM SUPPLIERS FROM AJAY</p>
+                <p class="meets detail">12.00-1.00</p>
+                <p class="meets detail">AT SUNSET ROAD</p>
+            </div>
+            <div>
+                <p class="meets head">MEETINGS FROM SUPPLIERS FROM ENCOPRICE</p>
+                <p class="meets detail">2.00-3.00</p>
+                <p class="meets detail">AT MORNING ON SOHNA ROAD</p>
+            </div>
+            <div>
+                <p class="meets head">MEETINGS FROM SUPPLIERS FROM JK LTD.</p>
+                <p class="meets detail">10.00-11.00</p>
+                <p class="meets detail">AT MORNING TENT HOUSE</p>
+            </div>
+            <div>
+                <p class="meets head">MEETINGS FROM SUPPLIERS FROM MANAGER</p>
+                <p class="meets detail">18.00-19.00</p>
+                <p class="meets detail">AT IMPERFECTIO BAR</p>
+            </div>
+        </div>
+        </article>
+        <!-- Contact section -->
+        <article id="contact">
+          <h2>Contact Details</h2>
+           <div class="contact_inner">
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.5400439068!2d77.04417539129687!3d28.527252741141748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1732636716608!5m2!1sen!2sin" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            class="location">
+            
+            </iframe>
+        
+            <div class="feedback-form">
+              <h2>Feedback</h2>
+              <form>
+              <input type="text" placeholder="Your Name"  name="name" required/><br>
+              <input type="email" placeholder="Your Email"  name="email" required/><br>
+              <textarea name="feedback" rows="5" cols="30" placeholder="Your Feedback"></textarea><br>
+              <input type="submit" value="Submit Feedback"/>
+            </form>
+           </div>
+
+           </div>
+        </article>
+        <!-- Footer section -->
+        <footer>
+          <div>
+          <a href="#"></a><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"></a><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"></a><i class="fa-brands fa-instagram"></i></a>
+        </div>
+          <div> &copy; 2024,Your company name,all rights reserved</div>
+
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
